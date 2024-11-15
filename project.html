@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADVENTURE</title>
+
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <!-- Navbar-->
+      <nav class="navbar">
+        <h1 class="logo"> ADVENTURE</h1>
+        <ul class="nav-links">
+            <li class="active"><a href="#"></a>Home</li>
+            <li><a href="#"></a>Tours</li>
+            <li><a href="#"></a>Explore</li>
+            <li><a href="#"></a>About</li>
+            <li class="ctn"><a  href="#"></a>Contact</li>
+        </ul>
+         <img src="./menu-btn.png" alt="" class="menu-btn">
+      </nav>
+
+    <header>
+        <div class="header-content">
+            <h2>Explore The Colorful World</h2>
+            <div class="line"></div>
+            <h1>A WONDERFUL GIFT</h1>
+            <a href=" #" class="ctn">Learn More</a>
+        </div>
+    </header>
+
+    <!-- Events -->
+     <section class="events">
+        <div class="title">
+            <h1>Upcomimg Events</h1>
+            <div class="line"> </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="img1.png" alt="">
+                <h4>Everest Camp Trek</h4>
+                <p>1. Journey to the Roof of the World: The Everest Base Camp trek remains one of the most iconic adventures, attracting trekkers from around the globe to experience the majestic beauty of the Himalayas."</p> <br>
+                <p>2. Discover the Rich Sherpa Culture: Along the trek, participants have the opportunity to interact with the resilient Sherpa communities, exploring their unique traditions and way of life.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="./img2.png" alt="">
+                <h4>Walking Holidays</h4>
+                <p>1. A Refreshing Break from the Everyday Hustle: These trips focus on the simple pleasure of walking, combining the benefits of physical activity with the therapeutic effect of being in nature.</p> <br>
+                <p>2. A Refreshing Break from the Everyday Hustle": These trips focus on the simple pleasure of walking, combining the benefits of physical activity with the therapeutic effect of being in nature.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        </div>
+     </section>
+      
+     <section class="explore">
+       <div class="explore-content">
+        <h1>Explore The World</h1>
+        <div class="line"></div>
+        <p>Exploring the world opens doors to new experiences, cultures, and perspectives. It’s not just about visiting new places but also about immersing oneself in diverse environments, embracing local traditions, and discovering the beauty that each corner of the earth has to offer. Every journey enriches our understanding, expands our horizons, and leaves us with memories that last a lifetime. Whether it's trekking through majestic mountains or exploring vibrant cities, the world is full of wonders waiting to be discovered.</p>
+        <a href="#" class="ctn">Learn More</a>
+       </div> 
+     </section>
+ 
+     <section class="tours">
+        <div class="row">
+            <div class="col content-col">
+                <h1>UPCOMING TOURS & DESTINATION</h1>
+                <div class="line"></div>
+                <p>1. Exploring Hidden Gems: As travel trends shift in 2024, lesser-known destinations are gaining popularity among tourists seeking unique experiences beyond the usual hotspots.</p>
+                <p>2. Technology-Enhanced Travel: The integration of AI and VR in tourism is providing travelers with immersive previews of their destinations, enhancing planning and excitement.</p>
+                <p>3. Adventure Tourism Boom: For thrill-seekers, 2024 will see an expansion of adventure tourism packages, ranging from mountain treks and underwater explorations to extreme sports.</p>
+                <a href="#" class="ctn">Laarn More</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="./img3.png" alt="">
+                    <img src="./img4.png" alt="">
+                    <img src="./img5.png" alt="">
+                    <img src="./img6.png" alt="">
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <section class="footer">
+        <p>123 Fifth Avenue, NY 10160, New York, USA | Phone: 800-123-456 | Email: contact@example.com</p>
+        <p>Copyright &#169 2020 Outdoor Adventure</p>
+     </section>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+        navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>
