@@ -1,4 +1,3 @@
-/* Google form */
 @import url('https:fonts.googleapis.com/css2?family=poppins');
 
 /* Global */
@@ -76,6 +75,7 @@ header{
     background: #fc036b;
     border-radius: 30px;
     color: whitesmoke;
+    cursor: pointer;
 }
 .menu-btn{
     position: absolute;
@@ -186,18 +186,8 @@ p{
 .content-col .ctn{
     margin-left: -100px;
 }
-.footer {
-    width: 100%;
-    min-height: 100px;
-    padding: 20px 80px;
-    margin: 0;
-    background: #484872;
-    text-align: center;
-}
-.footer p{
-    color: whitesmoke;
-    margin: 20px auto;
-}
+
+
 /*   MObile device*/
 @media only screen and (max-width:850px){
     .menu-btn{
@@ -251,9 +241,7 @@ p{
     .image-gallery img{
         width: 90%;
     }
-    .footer{
-        padding: 10px;
-    }
+   
 }
 /* animation */
 img{
@@ -270,4 +258,85 @@ img:hover{
 li:hover{
     color: #fc036b;
     
+}
+
+/* Footer Styles */
+.footer {
+    background: #484872;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px;
+}
+
+.footer-container div {
+    flex: 1;
+    margin: 10px;
+    min-width: 250px;
+}
+
+.footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #fc036b;
+}
+
+.footer p, .footer ul {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #dddddd;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #dddddd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+    color: #fc036b;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    padding-top: 10px;
+    border-top: 1px solid #dddddd33;
+    font-size: 0.9rem;
+}
+
+.footer-bottom p {
+    color: #bbbbbb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-container div {
+        margin-bottom: 20px;
+    }
+}
+.footer a{
+    text-decoration: none;
+    color: whitesmoke;
 }

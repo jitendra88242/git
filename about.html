@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure - About</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* About Section */
+        .about {
+            width: 100%;
+            padding: 100px 50px;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .about-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        .about-image img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .about-content {
+            flex: 1;
+            max-width: 600px;
+        }
+
+        .about-content h1 {
+            font-size: 3rem;
+            color: #484872;
+        }
+
+        .about-content .line {
+            width: 80px;
+            height: 4px;
+            background: #fc036b;
+            margin: 10px 0;
+            border-radius: 2px;
+        }
+
+        .about-content p {
+            color: #666;
+            font-size: 1.1rem;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+
+        .about-content .ctn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #fc036b;
+            color: #fff;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .about-content .ctn:hover {
+            background: #fff;
+            color: #fc036b;
+            border: 2px solid #fc036b;
+        }
+    </style>
+</head>
+<body>
+    <!-- About Section -->
+    <section class="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="img1.png" alt="Adventure Image">
+            </div>
+            <div class="about-content">
+                <h1>About Us</h1>
+                <div class="line"></div>
+                <p>
+                    Adventure is not just about traveling; it's about exploring the unexplored, 
+                    experiencing the thrill of the unknown, and discovering yourself along the way. 
+                    We are dedicated to crafting unforgettable experiences, from serene mountain 
+                    treks to exhilarating water adventures. Our mission is to bring people closer 
+                    to nature and the wonders of the world.
+                </p>
+                <p>
+                    Join us on a journey that blends excitement, culture, and memories, leaving 
+                    you with stories to tell and experiences to cherish forever.
+                </p>
+                <a href="https://www.makemytrip.com/holidays-india/ladakh-travel-packages.html" class="ctn">Learn More</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

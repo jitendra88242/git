@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f9f9f9;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        h1, h2, h3, p {
+            margin-bottom: 20px;
+        }
+
+        /* Header Section */
+        .header {
+            width: 100%;
+            height: 60vh;
+            background: url(https://imgs.search.brave.com/_0rgu3Lm6SElS4Cld9cRnZIABxZOfxxo5hMXAoXZyjU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNDc1/NjgwNDM5L3Bob3Rv/L21vdW50YWluLWJp/a2luZy1icml0aXNo/LWNvbHVtYmlhLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz1H/YXpFOFViQ0FfLWVh/bFNrY0NaZFZiX3I2/YW1uTy05X3EzcTly/Y1hLS2xjPQ) no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        /* Tours Section */
+        .tours {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h1 {
+            font-size: 2.8rem;
+            color: #484872;
+        }
+
+        .section-title .line {
+            width: 100px;
+            height: 4px;
+            background: #fc036b;
+            margin: 10px auto;
+        }
+
+        .packages {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .package {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 350px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .package:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .package img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .package-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .package-content h3 {
+            font-size: 1.6rem;
+            color: #484872;
+            margin-bottom: 10px;
+        }
+
+        .package-content p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .package-content .ctn {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #fc036b;
+            color: white;
+            border-radius: 25px;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        .package-content .ctn:hover {
+            background: white;
+            color: #fc036b;
+            border: 2px solid #fc036b;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 3rem;
+            }
+
+            .header p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <section class="header">
+        <div class="header-content">
+            <h1>Tours</h1>
+            <p>Discover our exclusive tour packages designed for every explorer.</p>
+        </div>
+    </section>
+
+    <!-- Tours Section -->
+    <section class="tours">
+        <div class="section-title">
+            <h1>Our Top Tours</h1>
+            <div class="line"></div>
+        </div>
+        <div class="packages">
+            <!-- Tour 1 -->
+            <div class="package">
+                <img src="https://imgs.search.brave.com/C0dnRoC34M5M21O0z1PbpVH1YMeEyrUHTM-BmZMe-Zg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNTIx/MzI5MTI4L3Bob3Rv/L2hpbWFsYXlhcy1t/dC1ldmVyZXN0LXRy/ZWsta2h1bWJ1LXZh/bGxleS1uZXBhbC5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/dmMtZlg1aTVMNGp0/eWlSUURhcTJ2Z1d2/a0lJM2tQSU1QaHI3/Y2JoRVZZbz0" alt="Himalayas Tour">
+                <div class="package-content">
+                    <h3>Himalayas Adventure</h3>
+                    <p>Embark on an unforgettable journey through the breathtaking Himalayan landscapes.</p>
+                    <a href="https://www.makemytrip.com/holidays-india/ladakh-travel-packages.html#" class="ctn">View Details</a>
+                </div>
+            </div>
+            <!-- Tour 2 -->
+            <div class="package">
+                <img src="https://imgs.search.brave.com/LAzxmv1yOZs23tIWhS88yWEjWLpoesg9KymTZ6C16rw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNjM2/NTI4ODIyL3Bob3Rv/L2phaXB1ci1wYWxh/Y2UtaW4taW5kaWEu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PWlkMTE2VW5tZTVx/Tmo0WGRRSXhEMlkz/LV9PMzlSVjNseF9l/R1FZWGlUYnM9" alt="Rajasthan Tour">
+                <div class="package-content">
+                    <h3>Rajasthan Heritage Tour</h3>
+                    <p>Experience the royal heritage of Rajasthan, with its majestic forts and colorful traditions.</p>
+                    <a href="https://www.makemytrip.com/holidays-india/ladakh-travel-packages.html#" class="ctn">View Details</a>
+                </div>
+            </div>
+            <!-- Tour 3 -->
+            <div class="package">
+                <img src="https://imgs.search.brave.com/WnEcN6ISvsqegb7ysjOpdfkBTqbU6urYn-1YQ8sLw_Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNjc1/NjAyNzk4L3Bob3Rv/L2JlYWNoLWluLWdv/YS1pbmRpYS5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9dmtL/MU9TZ2QyTkR5NW40/YW5EZy1wRm9aUy11/NmhsYlBXNUs2Qk1T/R0t5cz0" alt="Goa Tour">
+                <div class="package-content">
+                    <h3>Goa Beach Retreat</h3>
+                    <p>Relax on the golden beaches of Goa and enjoy its vibrant nightlife.</p>
+                    <a href="https://www.makemytrip.com/holidays-india/ladakh-travel-packages.html#" class="ctn">View Details</a>
+                </div>
+            </div>
+            <!-- Tour 4 -->
+            <div class="package">
+                <img src="https://imgs.search.brave.com/B-ie6B-8Oc_EQWivd54LwXKimVtZb2G8rDt2pr31rRE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNTM0/NzU3NDA3L3Bob3Rv/L2JhY2t3YXRlcnMt/b2Yta2VyYWxhLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz1S/M3FieWs1YkptWW1J/LXUzaG5JVFFSN0NC/b3lZYzBVb2szVzRC/ZllvWlV3PQ" alt="Kerala Tour">
+                <div class="package-content">
+                    <h3>Kerala Backwaters</h3>
+                    <p>Explore the tranquil backwaters of Kerala and immerse yourself in its natural beauty.</p>
+                    <a href="https://www.makemytrip.com/holidays-india/ladakh-travel-packages.html#" class="ctn">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
